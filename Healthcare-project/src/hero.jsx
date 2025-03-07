@@ -1,13 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import image1 from './assets/hero.jpg'
 function Hero(){
  const textdeco={
   textDecoration:'none'
  }
+ const imagesetting={
+  width:'100%'
+ }
+ const body={
+  height:'90vh'
+ }
   return(
-    <div className="container-fluid mt-5 row bg-success">
-      <div className="col-sm-12 col-md-6 col-lg-5 container  justify-content-center p-5 bg-info">
-        <div className="container bg-light align-content-center shadow p-5">
-        <h2>Consult Your Doctor From Home.</h2>
+
+    <div className="container-fluid mt-5 pt-4 row border-0" style={body}>
+      <div className="col-sm-12 col-md-6 col-lg-5 container  justify-content-center align-content-center p-5">
+        <div className="container align-content-center rounded-4 shadow p-3 ">
+        <h2 className='my-4'>Consult Your Doctor From Home.</h2>
         <p>Choose the best online therapy services, begin your free assessment and speak to a licensed therapist. Help is at your fingertips.</p>
         <div className="mt-5">
         <button className="btn  btn-success me-3 px-4"><a href="#" style={textdeco} className='text-light'>Book a Meeting</a></button>
@@ -17,7 +25,9 @@ function Hero(){
         </div>
        
       </div>
-      <div className="col-sm-12 col-md-6 col-lg-7 container bg-primary">2</div>
+      <div className="col-sm-12 col-md-6 col-lg-7 justify-content-center align-content-center">
+        <img src={image1} alt="" style={imagesetting} className='rounded-5 img-fluid' />
+      </div>
     </div>
   );
 }
