@@ -1,5 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Darmatologist from './assets/Darmatologist.jpg';
+import lagatprof from './assets/DR.lagatprofile.png';
+import muchiriprof from './assets/DR.Muchiriprofile.png';
+import joyceprof from './assets/joyceprof.png';
+import borehprof from './assets/borehprof.png';
 import Councellor from './assets/councellor.jpg'
 
 
@@ -20,10 +24,10 @@ function Services(){
    }
 return(
   <>
- <h3 className="text-center text-primary">Services We Offer</h3>
+ <h3 className="text-center text-primary my-5">Services We Offer</h3>
 <div className="container-fluid  row justify-content-center bg-light p-5" id='accordation'>
   <div className="col-sm-8 col-md-6 col-lg-3  p-2">
-    <img src={Darmatologist} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Dermatology</span>
+    <img src={muchiriprof} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Dermatology</span>
     <div className="d-grid">
     <button type="button" class="btn btn-success mx-3 px-5" data-bs-toggle="collapse" data-bs-target="#demo1">Read More</button>
     </div>
@@ -34,7 +38,7 @@ return(
   </div>
   </div>
   <div className="col-sm-8 col-md-6 col-lg-3  p-2">
-  <img src={Darmatologist} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Nutritional Counselling</span>
+  <img src={joyceprof} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Nutritional Counselling</span>
   <div className="d-grid">
   <button type="button" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo2">Read More</button>
   </div>
@@ -44,7 +48,7 @@ return(
   </div>
   </div>
   <div className="col-sm-8 col-md-6 col-lg-3  p-2">
-  <img src={Darmatologist} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Psychology</span>
+  <img src={borehprof} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Psychology</span>
     <div className="d-grid">
     <button type="button" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo3">Read More</button>
     <div className="collapse" id='demo3'  data-bs-parent='#accordation'>
@@ -54,7 +58,7 @@ return(
     </div>
   </div>
   <div className="col-sm-8 col-md-6 col-lg-3 p-2">
-  <img src={Darmatologist} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Gynecology</span>
+  <img src={lagatprof} alt="" style={img} className='me-4 img-fluid' />  <span className="text-primary">Gynecology</span>
    <div className="d-grid">
    <button type="button" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo4">Read More</button>
    </div>
