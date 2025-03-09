@@ -5,7 +5,8 @@ import Services from './services.jsx';
 import Consultation from './consultation.jsx';
 import Doctors from './doctors.jsx';
 import Footer from "./footer.jsx";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Contact from './contact.jsx'
+import Meeting from './meeting.jsx';
 
 function App() {
   return(
@@ -15,6 +16,8 @@ function App() {
     <Services/>
     <Consultation/>
     <Doctors/>
+    <Contact/>
+    <Meeting/>
     <Footer/>
    </>
   );
