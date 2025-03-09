@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './assets/logo.png';
+import React from 'react';
+
 
 function Header(){
 

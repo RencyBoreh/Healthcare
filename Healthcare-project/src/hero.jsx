@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image1 from './assets/hero.jpg'
+import image1 from './assets/hero.png';
 function Hero(){
  const textdeco={
   textDecoration:'none'
  }
  const imagesetting={
-  width:'100%'
+  width:''
  }
  const body={
   height:'90vh'
@@ -25,8 +25,11 @@ function Hero(){
         </div>
        
       </div>
-      <div className="col-sm-12 col-md-6 col-lg-7 justify-content-center align-content-center">
-        <img src={image1} alt="" style={imagesetting} className='rounded-5 img-fluid' />
+      <div className="col-sm-12 col-md-6 col-lg-7 align-content-center justify-content-end">
+        <div className="container-fluid  d-flex justify-content-center">
+        <img src={image1} alt=""  className='img-fluid' />
+        </div>
+      
       </div>
     </div>
   );
