@@ -7,7 +7,8 @@ function Meeting(){
     textDecoration:'none'
   }
  return(
-<>
+<div className='container-fluid mt-5 pt-4'>
+
 <h2 className="text-center text-primary">Book a Meeting</h2>
 <div className="container-fluid row  bg-light p-4 border-0">
  <div className="container col-lg-6 col-md-10 col-sm-12 rounded-4 shadow">
@@ -69,7 +70,7 @@ function Meeting(){
   
  </div>
 </div>
-</>
+</div>
 
 );
 }

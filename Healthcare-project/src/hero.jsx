@@ -1,14 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from './assets/hero.png';
+import {Link,useNavigate} from 'react-router-dom'
 function Hero(){
  const textdeco={
   textDecoration:'none'
  }
+ const navigation=useNavigate()
  const imagesetting={
   width:''
  }
  const body={
-  height:'90vh'
+  height:'100vh'
  }
   return(
 
@@ -18,8 +20,9 @@ function Hero(){
         <h2 className='my-4'>Consult Your Doctor From Home.</h2>
         <p>Choose the best online therapy services, begin your free assessment and speak to a licensed therapist. Help is at your fingertips.</p>
         <div className="mt-5">
-        <button className="btn  btn-success me-3 px-4"><a href="#" style={textdeco} className='text-light'>Book a Meeting</a></button>
-        <span><a href="#" style={textdeco}>How It Works</a></span>
+        <button className="btn  btn-success me-3 px-4" onClick={()=>navigation('/meeting')}>Book a Meeting</button>
+        <span>
+          <Link to='/consultation'style={textdeco} >How it Works</Link></span>
         </div>
         
         </div>

@@ -7,9 +7,10 @@ function Doctors(){
   const textdeco={
     textDecoration:'none'
    }
+  
 
   return(
-    <div className="container-fluid mt-5 bg-light px-5 pt-3 pb-4">
+    <div className="container-fluid mt-5  px-5 pt-4 pb-4">
       <h2 className="text-center text-primary">Our Doctors</h2>
       <div className="container-fluid row p-5">
   

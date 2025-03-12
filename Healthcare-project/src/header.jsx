@@ -1,9 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './assets/logo.png';
 import React from 'react';
-
+import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
+import { useEffect } from 'react';
 
 function Header(){
+  const navigation= useNavigate();
+ 
+ 
 
   const logostyle={
     width:'200px',
@@ -16,25 +21,36 @@ function Header(){
    }
  return(
 <>
-<nav className="navbar fixed-top navbar-expand-md bg-light">
 
-  <a href="#" className="navbar-brand">
-  <img src={logo} style={logostyle} alt="" className='img-fluid' />
-</a>
-
-<button className="navbar-toggler" data-bs-toggle='collapse' data-bs-target='#navs'>
+<nav className="navbar fixed-top justify-content-between navbar-dark navbar-expand-sm px-2 bg-success" id='navspy'>
+<div>
+<Link className='navbar-brand' ><img src={logo} style={logostyle} alt="" className='img-fluid' /></Link>
+</div>
+ <button className="navbar-toggler" data-bs-toggle='collapse' data-bs-target='#navs'>
   <span className="navbar-toggler-icon"></span>
 </button>
-<div className="collapse p-2  justify-content-end px-3 pe-4 navbar-collapse" id='navs'>
+<div className="collapse p-2 px-3 pe-4 justify-content-center navbar-collapse" id='navs'>
 <ul className="navbar-nav">
-  <li className="nav-item"><a href="#" className="nav-link me-3" style={navs}>Home</a></li>
-  <li className="nav-item"><a href="#" className="nav-link me-3"style={navs}>Services</a></li>
-  <li className="nav-item"><a href="#" className="nav-link me-3"style={navs}>Doctors</a></li>
-  <li className="nav-item"><a href="#" className="nav-link me-3" style={navs}>Contact</a></li>
- 
+  <li className="nav-item">
+    <Link className='nav-link' to='/'>Home</Link>
+    </li>
+  <li className="nav-item">
+    <Link className="nav-link" to="/services">Services</Link>
+  </li>
+  <li className="nav-item">
+    <Link className='nav-link' to='/doctors'>Doctors</Link>
+  </li>
+  <li className="nav-item">
+    <Link className="nav-link" to='/contact'>Contact </Link>
+  </li>
+  <li className="nav-item">
+    <Link className="nav-link" to='/consultation'>Consultation </Link>
+  </li>
 </ul>
-<button className="btn btn-success px-5"><a href="#" style={textdeco} className='text-light'>Book a Meeting</a></button>
+
 </div>
+<button className="btn btn-warning px-5" onClick={()=>navigation('/meeting')}>
+  Book a Meeting</button>
 </nav>
 
 </>

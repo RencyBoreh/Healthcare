@@ -17,15 +17,12 @@ function Services(){
    const img={
     width:'100px'
    }
-
-
-   const widthset={
   
-   }
 return(
   <>
- <h3 className="text-center text-primary my-5">Services We Offer</h3>
-<div className="container-fluid  row justify-content-center bg-light p-5" id='accordation'>
+  <div className='container-fluid mt-5 pt-4'>
+    <h3 className="text-center text-primary my-5">Services We Offer</h3>
+    <div className="container-fluid  row justify-content-center  p-5" id='accordation'>
   <div className="col-sm-8 col-md-6 col-lg-3  p-2">
     <img src={muchiriprof} alt="" style={img} className='rounded-circle me-4 img-fluid' />  <span className="text-primary">Dermatology</span>
     <div className="d-grid">
@@ -73,7 +70,7 @@ return(
 
  
 
- 
+ </div>
 
 
  
