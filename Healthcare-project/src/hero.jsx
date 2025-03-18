@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from './assets/hero.png';
 import {Link,useNavigate} from 'react-router-dom'
+import Services from './services.jsx';
+import Consultation from './consultation.jsx';
+import Doctors from './doctors.jsx';
 function Hero(){
  const textdeco={
   textDecoration:'none'
@@ -13,7 +16,7 @@ function Hero(){
   height:'100vh'
  }
   return(
-
+<>
     <div className="container-fluid mt-5 pt-4 row border-0" style={body}>
       <div className="col-sm-12 col-md-6 col-lg-5 container  justify-content-center align-content-center p-5">
         <div className="container align-content-center rounded-4 shadow p-3 ">
@@ -35,6 +38,12 @@ function Hero(){
       
       </div>
     </div>
+   <Services/>
+   <Consultation/>
+   <Doctors/>
+
+</>
+
   );
 }
 export default Hero

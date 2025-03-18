@@ -32,16 +32,16 @@ function Header(){
 <div className="collapse p-2 px-3 pe-4 justify-content-center navbar-collapse" id='navs'>
 <ul className="navbar-nav">
   <li className="nav-item">
-    <Link className='nav-link' to='/'>Home</Link>
+    <Link className='nav-link me-2' to='/'>Home</Link>
     </li>
   <li className="nav-item">
-    <Link className="nav-link" to="/services">Services</Link>
+    <Link className="nav-link me-2" to="/services">Services</Link>
   </li>
   <li className="nav-item">
-    <Link className='nav-link' to='/doctors'>Doctors</Link>
+    <Link className='nav-link me-2' to='/doctors'>Doctors</Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link" to='/contact'>Contact </Link>
+    <Link className="nav-link me-" to='/contact'>Contact </Link>
   </li>
   <li className="nav-item">
     <Link className="nav-link" to='/consultation'>Consultation </Link>

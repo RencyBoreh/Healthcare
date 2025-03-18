@@ -24,6 +24,7 @@ function App() {
       <Route path='/meeting' element={<Meeting/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
+   
     <Footer /> 
     </>
   
